@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Verdana, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}

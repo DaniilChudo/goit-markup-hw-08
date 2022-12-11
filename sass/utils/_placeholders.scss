@@ -1,0 +1,17 @@
+%container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+%card-set__items {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
