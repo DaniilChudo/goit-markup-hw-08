@@ -11,18 +11,18 @@
 }
 
 .benefits__list {
-  @media screen and (min-width: 767px) {
+
+  display: flex;
+  gap: var(--indent);
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
     display: flex;
     gap: var(--indent);
-    flex-wrap: wrap;
-    --items: 2;
   }
 
-  @media screen and (min-width: 1199px) {
-    display: flex;
-    gap: var(--indent);
-    flex-wrap: wrap;
-    --items: 4;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
   }
  }
 
@@ -34,24 +34,23 @@
 .benefits__item {
  width: 100%;
   
-  @media screen and (min-width: 767px) {
-    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-  }
-
-  @media screen and (min-width: 1199px) {
-    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  @media screen and (min-width: 767.9px) {
+    flex-basis: calc((100% - var(--indent) * (var(--column-for-tablet) - 1)) / var(--column-for-tablet));
   }
 }
 
 
 .benefits__sub-title {
   font-size: 14px;
-  text-align: center;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-bottom: 10px;
+
+  @media screen and (min-width: 767.9px) {
+    text-align: center;
+}
 }
 
 .benefits__description {

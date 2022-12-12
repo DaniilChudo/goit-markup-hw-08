@@ -144,6 +144,7 @@ img {
 }
 
 .header {
+  display: none;
   background-color: var(--main-background-color);
   border-bottom: 1px solid #ececec;
 }
@@ -300,6 +301,7 @@ img {
 }
 
 .hero {
+  display: none;
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
@@ -381,26 +383,26 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 767px) {
+.benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--indent);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
   .benefits__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: var(--indent);
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    --items: 2;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .benefits__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: var(--indent);
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    --items: 4;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -411,27 +413,25 @@ img {
 .benefits__item {
   width: 100%;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767.9px) {
   .benefits__item {
-    -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-        flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-  }
-}
-@media screen and (min-width: 1199px) {
-  .benefits__item {
-    -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-        flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--column-for-tablet) - 1)) / var(--column-for-tablet));
+        flex-basis: calc((100% - var(--indent) * (var(--column-for-tablet) - 1)) / var(--column-for-tablet));
   }
 }
 
 .benefits__sub-title {
   font-size: 14px;
-  text-align: center;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-bottom: 10px;
+}
+@media screen and (min-width: 767.9px) {
+  .benefits__sub-title {
+    text-align: center;
+  }
 }
 
 .benefits__description {
@@ -619,6 +619,7 @@ img {
 }
 
 .footer {
+  display: none;
   background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
