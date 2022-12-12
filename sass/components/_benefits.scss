@@ -11,30 +11,38 @@
 }
 
 .benefits__list {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  @media screen and (min-width: 767px) {
+    display: flex;
+    gap: var(--indent);
+    flex-wrap: wrap;
+    --items: 2;
+  }
 
-  @media screen and (min-width: 768px) {
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
-   }
+  @media screen and (min-width: 1199px) {
+    display: flex;
+    gap: var(--indent);
+    flex-wrap: wrap;
+    --items: 4;
+  }
  }
 
 
-/*.benefits__list .benefits__item:not(:last-child) {
+.benefits__list .benefits__item:not(:last-child) {
   gap: 30px;
-}*/
+}
 
 .benefits__item {
-  width: 100%;
+ width: 100%;
+  
+  @media screen and (min-width: 767px) {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
 
-  @media screen and (min-width: 768px) {
-  flex-basis: calc((100% - var(--width-gap-tablet)*(var(--column-for-tablet) - 1))/var(--column-for-tablet));
-   }
-
+  @media screen and (min-width: 1199px) {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
 }
+
 
 .benefits__sub-title {
   font-size: 14px;
