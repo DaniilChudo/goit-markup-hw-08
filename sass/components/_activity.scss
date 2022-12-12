@@ -1,3 +1,17 @@
+.activity-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1199.9px){
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+@media screen and (max-width: 1199.9px){
+  display: none;
+  }
+}
+
 .activity__list {
   display: flex;
   flex-wrap: wrap;

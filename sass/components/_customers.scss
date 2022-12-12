@@ -2,7 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
+  justify-content: center;
 }
+
 .customers__link {
   display: flex;
   justify-content: center;
@@ -30,9 +32,22 @@
 }
 
 .customers__item {
-  --items: 6;
+
+  @media screen and (min-width: 767.9px) {
+    --items: 3;
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items)); 
+  }
+
+  @media screen and (min-width: 1199.9px) {
+    --items: 6;
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
 }
 
 .customers__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: .03em;
 }

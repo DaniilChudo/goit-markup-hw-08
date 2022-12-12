@@ -1,6 +1,7 @@
 
 .benefits__container {
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   background-color: #f5f4fa;
@@ -42,6 +43,7 @@
 
 .benefits__sub-title {
   font-size: 14px;
+  text-align: center;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -50,6 +52,10 @@
 
   @media screen and (min-width: 767.9px) {
     text-align: center;
+}
+
+@media screen and (min-width: 767.9px) {
+  text-align: left;
 }
 }
 
