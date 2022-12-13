@@ -1,7 +1,19 @@
 .contacts {
-  width: 231px;
   display: flex;
+ text-align: center;
   flex-direction: column;
+ margin-bottom: 60px;
+
+ @media screen and (min-width: 768px) {
+  margin-left: 76px;
+ }
+
+ @media screen and (min-width: 1199.9px)
+ {
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 0;
+}
 }
 
 .contacts__list {
@@ -51,7 +63,7 @@
   display: inline-block;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--logo-web-text-color);

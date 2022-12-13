@@ -1,9 +1,24 @@
 .footer-socials {
-  display: flex;
+ /* display: flex;
   flex-direction: column;
   margin-top: 12px;
-  margin-bottom: 40px;
-  margin-left: 70px;
+  margin-left: 70px;*/
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 89px;
+    margin-bottom: 0;
+   }
+
+   @media screen and (min-width: 1200px)
+ {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 0;
+}
 }
 
 .footer-socials__title {
@@ -47,4 +62,12 @@
   &:focus .socials__image {
     fill: var(--main-background-color);
   }
+}
+
+
+.contacts__logo {
+  font-family: "Raleway",sans-serif;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  text-decoration: none;
 }
