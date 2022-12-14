@@ -1,34 +1,43 @@
 .hero {
-  display: none;
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-  background-image: linear-gradient(
+  /*background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/herofon/imgh.png);
+    /*url(../images/herofon/imgh.png);*/
   background-repeat: no-repeat;
   background-position: center;
   background-color: #c4c4c4;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+  padding-top: 118px;
+  padding-bottom: 118px; 
 
+  @media screen and (min-width: 1199.9px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+}
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  width: 696px;
+  font-size: 26px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  line-height: calc(60 / 44);
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
   color: var(--hero-title-color);
+
+  @media screen and (min-width: 1199.9px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+}
 }
 
 .hero-btn {
@@ -44,7 +53,7 @@
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 216px;
+  /*min-width: 216px;*/
   letter-spacing: 0.06em;
   color: var(--button-text-color);
   background-color: var(--pasive-button-color);
@@ -58,4 +67,8 @@
 .hero-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--active-button-color);
+}
+
+.container-hero {
+  @extend %container;
 }

@@ -1,5 +1,4 @@
 .header {
-  display: none;
   background-color: var(--main-background-color);
   border-bottom: 1px solid #ececec;
 }
@@ -12,6 +11,7 @@
 
 .header__list-contacts {
   display: flex;
+  display: none;
   text-align: center;
   margin-left: 315px;
 }
