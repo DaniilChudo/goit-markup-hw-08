@@ -49,44 +49,14 @@
               <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
         </div>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg width="40" height="40">
+          <svg class="menu-toggle__icon" width="40" height="40">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
     </header>
 
-     <!---Mobile menu-->
- <div class="menu">
-  <div class="menu__container js-menu-container" id="mobile-menu">
-    <button class="menu__toggle js-close-menu">
-      <svg width="40" height="40">
-        <use href="./images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-
-    <ul class="menu__nav-list">
-      <li class="menu__nav-item">
-        <a href="" class="menu__nav-link link menu__nav-link--current">Студія</a>
-      </li>
-      <li class="menu__nav-item">
-        <a href="./portfolio.html" class="menu__nav-link">Портфоліо</a>
-      </li>
-      <li class="menu__nav-item"><a href="" class="menu__nav-link">Контакти</a></li>
-    </ul>
-    <div class="menu__list-contacts">
-      <a href="mailto:info@devstudio.com" class="menu__mail">
-        <svg class="menu__icon-envelope" width="16" height="12">
-          <use href="./images/icons.svg#icon-envelope"></use>
-        </svg>
-        info@devstudio.com</a
-      >
-      <a href="tel:+380961111111" class="menu__tel"
-        ><svg class="menu__icon-smartphone" width="10" height="16">
-          <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
-    </div>
-  </div>
-</div> 
+    
 
     <!---HERO--->
     <main>
@@ -665,11 +635,11 @@
   <!---modal---->
   <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <botton class="modal__btn" data-modal-close>
+        <button class="modal__btn" data-modal-close>
           <svg class="modal__icon" width="11" height="11">
             <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
-        </botton>
+        </button>
         <strong class="modal__lable"
           >Залиште свої дані, ми вам передзвонимо</strong
         >
@@ -741,6 +711,44 @@
         </form>
       </div>
     </div>
+
+     <!---Mobile menu-->
+ <div class="menu">
+  <div class="menu__container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu-toggle__icon" width="40" height="40">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <ul class="menu__nav-list">
+      <li class="menu__nav-item">
+        <a href="" class="menu__nav-link link menu__nav-link--current">Студія</a>
+      </li>
+      <li class="menu__nav-item">
+        <a href="./portfolio.html" class="menu__nav-link">Портфоліо</a>
+      </li>
+      <li class="menu__nav-item"><a href="" class="menu__nav-link">Контакти</a></li>
+    </ul>
+    <div class="menu__list-contacts">
+      <a href="tel:+380961111111" class="menu__tel menu__tel--tel">+38 096 111 11 11</a>
+      <a href="mailto:info@devstudio.com" class="menu__mail">info@devstudio.com</a>
+    </div>
+    <ul class="menu__socials">
+      <li class="menu__socials-item menu__socials-item--current"><a class="menu__socials-link" target="_blank"
+        rel="noopener noreferrer" aria-label="instagram" href="https://www.instagram.com">Instagram</a></li>
+      
+        <li class="menu__socials-item menu__socials-item--current"><a class="menu__socials-link" target="_blank"
+        rel="noopener noreferrer"aria-label="twitter" href="https://twitter.com"></a>Twitter</li>
+      
+        <li class="menu__socials-item menu__socials-item--current"><a class="menu__socials-link" target="_blank"
+        rel="noopener noreferrer"aria-label="facebook" href="https://facebook.com"></a>Facebook</li>
+      
+        <li class="menu__socials-item menu__socials-item--current"><a class="menu__socials-link" target="_blank"
+        rel="noopener noreferrer"aria-label="linkedin" href="https://www.linkedin.com/"></a>LinkedIn</li>
+    </ul>
+  </div>
+</div> 
 
  
     <script src="./js/modal.js"></script>

@@ -7,15 +7,39 @@
   @extend %container;
   display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 767.9px)
+  {
+   height: 60px;
+}
 }
 
 .header__list-contacts {
   display: flex;
-  display: none;
   text-align: center;
+  
+  
+
+  @media (max-width: 767.9px)
+  {
+      display: none;
+}
+
+@media (max-width: 1199.9px)
+{
+  margin-left: auto;
+  flex-direction: column;
+}
+
+  
+@media (min-width: 1199.9px)
+{
   margin-left: 315px;
 }
 
+}
 .header__tel,
 .header__mail {
   font-weight: 500;
@@ -28,9 +52,14 @@
 .header__tel {
   display: flex;
   align-items: center;
+
+
+  @media (min-width: 1199.9px)
+{
   padding-top: 32px;
   padding-bottom: 32px;
   margin-left: 30px;
+}
 
   &:hover,
   &:focus {
@@ -46,8 +75,17 @@
 .header__mail {
   display: flex;
   align-items: center;
+
+  @media (max-width: 1199.9px)
+  {
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: 1199.9px)
+{
   padding-top: 32px;
   padding-bottom: 32px;
+}
 
   &:hover,
   &:focus {
