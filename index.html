@@ -21,7 +21,7 @@
     <link href=".//css/main.min.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="">
     <!---Header--->
     <header class="header">
       <div class="header__container">
@@ -133,33 +133,39 @@
         <ul class="activity__list">
           <li class="activity__item">
             <img
-              src="./images/box1.jpg"
-              alt="Розробляємо структуру"
-              class="activity-img"
-              width="370"
-            />
+									srcset="./images/studio/01_l@1x.jpg 1x, ./images/studio/01_l@2x.jpg 2x"
+									src="./images/studio/01_l@1x.jpg"
+									alt="руки на клавіатурі"
+									width="370"
+									height="294"
+									loading="lazy"
+								/>
             <div class="activity__overlay-title">
               <p class="activity__overlay-text">Десктопні додатки</p>
             </div>
           </li>
           <li class="activity__item">
             <img
-              src="./images/box2.jpg"
-              alt="Адаптуємо під потреби"
-              class="activity-img"
-              width="370"
-            />
+									srcset="./images/studio/02_l@1x.jpg 1x, ./images/studio/02_l@2x.jpg 2x"
+									src="./images/studio/hand-on-laptop-00.jpg"
+									alt="руки на ноутбуці"
+									width="370"
+									height="294"
+									loading="lazy"
+								/>
             <div class="activity__overlay-title">
               <p class="activity__overlay-text">Мобільні додатки</p>
             </div>
           </li>
           <li class="activity__item">
             <img
-              src="./images/box3.jpg"
-              alt="Створюємо неповторний дизайн"
-              class="activity-img"
-              width="370"
-            />
+									srcset="./images/studio/03_l@1x.jpg 1x, ./images/studio/03_l@2x.jpg 2x"
+									src="./images/studio/tablet-in-the-hand-00.jpg"
+									alt="в руках планшет"
+									width="370"
+									height="294"
+									loading="lazy"
+								/>
             <div class="activity__overlay-title">
               <p class="activity__overlay-text">Дизайнерскі рішення</p>
             </div>
@@ -174,12 +180,30 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img
-              src="./images/img4.jpg"
-              alt="продукт дизайнер"
-              class="team__img"
-              width="270"
-            />
+							<div class="card">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/studio/team/01_l@1x-270.jpg 1x, ./images/studio/team/01_l@2x-540.jpg 2x"
+              >
+
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/studio/team/01_m@1x-354.jpg 1x, ./images/studio/team/01_m@2x-708.jpg 2x"
+              >
+    
+              <source
+                media="(min-width: 480px)"
+                srcset="./images/studio/team/01_s@1x-450.jpg 1x, ./images/studio/team/01_s@2x-900.jpg 2x"
+              >
+
+              <img
+                src="./images/studio/team/01_s@1x-450.jpg"
+                alt="фото з Ігорем Дем'яненко"
+                width="450"
+                height="460"
+                loading="lazy"
+              />
             <div class="team__person">
               <h3 class="team__sub-title">Ігор Дем'яненко</h3>
               <p lang="en" class="team__description">Product Designer</p>
@@ -238,14 +262,36 @@
                 </li>
               </ul>
             </div>
+           </div>
           </li>
           <li class="team__item">
-            <img
-              src="./images/img1.jpg"
-              alt="верстальник"
-              class="team__img"
-              width="270"
-            />
+            <picture>
+              <!-- desktop screen -->
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/studio/team/02_l@1x-270.jpg 1x, ./images/studio/team/02_l@2x-540.jpg 2x"
+              >
+
+              <!-- tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/studio/team/02_m@1x-354.jpg 1x, ./images/studio/team/02_m@2x-708.jpg 2x"
+              >
+              
+              <!-- phone screen -->
+              <source
+                media="(min-width: 480px)"
+                srcset="./images/studio/team/02_s@1x-450.jpg 1x, ./images/studio/team/02_s@2x-900.jpg 2x"
+              >
+
+              <img
+                src="./images/studio/team/02_s@1x-450.jpg"
+                alt="фото з Ольгою Рєпіною"
+                width="450"
+                height="460"
+                loading="lazy"
+              />
+            </picture>
             <div class="team__person">
               <h3 class="team__sub-title">Ольга Рєпіна</h3>
               <p lang="en" class="team__description">Frontend Developer</p>
@@ -306,12 +352,33 @@
             </div>
           </li>
           <li class="team__item">
-            <img
-              src="./images/img2.jpg"
-              alt="маркетолог"
-              class="team__img"
-              width="270"
-            />
+            <picture>
+              <!-- desktop screen -->
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/studio/team/03_l@1x-270.jpg 1x, ./images/studio/team/03_l@2x-540.jpg 2x"
+              >
+
+              <!-- tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/studio/team/03_m@1x-354.jpg 1x, ./images/studio/team/03_m@2x-708.jpg 2x"
+              >
+              
+              <!-- phone screen -->
+              <source
+                media="(min-width: 480px)"
+                srcset="./images/studio/team/03_s@1x-450.jpg 1x, ./images/studio/team/03_s@2x-900.jpg 2x"
+              >
+
+              <img
+                src="./images/studio/team/03_s@1x-450.jpg"
+                alt="фото з Миколою Тарасовим"
+                width="450"
+                height="460"
+                loading="lazy"
+              />
+            </picture>
             <div class="team__person">
               <h3 class="team__sub-title">Микола Тарасов</h3>
               <p lang="en" class="team__description">Marketing</p>
@@ -372,12 +439,33 @@
             </div>
           </li>
           <li class="team__item card-set__items">
-            <img
-              src="./images/img3.jpg"
-              alt="дизайнер користувацького інтерфейсу"
-              class="team__img"
-              width="270"
-            />
+            <picture>
+              <!-- desktop screen -->
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/studio/team/04_l@1x-270.jpg 1x, ./images/studio/team/04_l@2x-540.jpg 2x"
+              >
+
+              <!-- tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/studio/team/04_m@1x-354.jpg 1x, ./images/studio/team/04_m@2x-708.jpg 2x"
+              >
+              
+              <!-- phone screen -->
+              <source
+                media="(min-width: 480px)"
+                srcset="./images/studio/team/04_s@1x-450.jpg 1x, ./images/studio/team/04_s@2x-900.jpg 2x"
+              >
+
+              <img
+                src="./images/studio/team/04_s@1x-450.jpg"
+                alt="фото з Михайлом Єрмаковим"
+                width="450"
+                height="460"
+                loading="lazy"
+              />
+            </picture>
             <div class="team__person">
               <h3 class="team__sub-title">Михайло Єрмаков</h3>
               <p lang="en" class="team__description">UI Designer</p>
@@ -752,7 +840,7 @@
 
 <script
 defer
-src="../goit-markup-hw-08/js/header-scroll.js"
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
 integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
 crossorigin="anonymous"
 ></script>
