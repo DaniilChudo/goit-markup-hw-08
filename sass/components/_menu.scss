@@ -24,12 +24,7 @@
     color: #ffffff;
 }
 
-.menu-toggle__icon:hover {
-  fill: var(--accent-text-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 
 
@@ -157,4 +152,12 @@
     width: 22px;
     height: 1px;
     background-color: rgba(33,33,33,.2);
+}
+
+
+.menu-toggle__icon:hover {
+  fill: var(--accent-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

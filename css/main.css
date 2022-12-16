@@ -1537,16 +1537,6 @@ img {
   color: #ffffff;
 }
 
-.menu-toggle__icon:hover {
-  fill: var(--accent-text-color);
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .menu__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1693,4 +1683,14 @@ img {
   width: 22px;
   height: 1px;
   background-color: rgba(33, 33, 33, 0.2);
+}
+
+.menu-toggle__icon:hover {
+  fill: var(--accent-text-color);
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=main.css.map */
