@@ -1512,7 +1512,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 48px 83px 48px 40px;
+  padding: 48px 40px;
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
@@ -1572,6 +1572,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 32px;
+  margin-top: auto;
   margin-bottom: 64px;
 }
 
