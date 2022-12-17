@@ -163,6 +163,11 @@ img {
 .section--team {
   background-color: var(--third-background-color);
 }
+@media screen and (min-width: 1199.9px) {
+  .section--team {
+    padding-bottom: 94px;
+  }
+}
 
 /*----------------Benefits--------------*/
 .section-benefits__title {
@@ -753,6 +758,13 @@ img {
 
 .socials__image {
   fill: currentColor;
+}
+
+@media screen and (min-width: 1199.9px) {
+  .customers-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .customers__list {
