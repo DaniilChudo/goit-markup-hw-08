@@ -43,6 +43,11 @@
   }
 }
 
+.customers-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .projects__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,7 +156,7 @@ img {
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -215,11 +220,20 @@ img {
 
 .header__tel,
 .header__mail {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: #757575;
+}
+@media (min-width: 1199.9px) {
+  .header__tel,
+.header__mail {
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
 }
 
 .header__tel {
@@ -663,7 +677,7 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1199.9px) {
   .team__title {
@@ -671,6 +685,7 @@ img {
     line-height: 0.8571428571;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
   }
 }
 
@@ -978,6 +993,11 @@ img {
   line-height: 1.14;
   color: var(--adress-text-color);
   text-align: center;
+}
+@media screen and (min-width: 1199.9px) {
+  .footer-socials__title {
+    text-align: left;
+  }
 }
 
 .footer-socials__list {

@@ -1,3 +1,8 @@
+
+.customers-section {
+  @extend %section;
+}
+
 .customers__list {
   display: flex;
   flex-wrap: wrap;

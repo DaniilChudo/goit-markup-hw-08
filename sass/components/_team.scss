@@ -38,13 +38,14 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: .03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 1199.9px) {
 font-size: 36px;
 line-height: calc(36 / 42);
 text-align: center;
 letter-spacing: 0.03em;
+margin-bottom: 50px
   }
 }
 
